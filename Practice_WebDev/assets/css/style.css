@@ -1038,4 +1038,91 @@ body.active { overflow: hidden; }
     padding-inline-end: 100px;
   }
 
+  
+  /* Recent Posts Section */
+.section[aria-label="recent posts"] {
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.section[aria-label="recent posts"] .section-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.section[aria-label="recent posts"] .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.section[aria-label="recent posts"] .card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section[aria-label="recent posts"] .card-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.section[aria-label="recent posts"] .card-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section[aria-label="recent posts"] .card-content {
+  padding: 20px;
+}
+
+.section[aria-label="recent posts"] .card-meta-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.section[aria-label="recent posts"] .card-meta-list li {
+  margin-right: 10px;
+}
+
+.section[aria-label="recent posts"] .card-meta-list a {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.section[aria-label="recent posts"] .card-meta-list a:hover {
+  background-color: #e5e5e5;
+}
+
+.section[aria-label="recent posts"] .card-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.section[aria-label="recent posts"] .card-title:hover {
+  color: #0088cc;
+}
+
+.section[aria-label="recent posts"] .card-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #666;
+}
+
 }
