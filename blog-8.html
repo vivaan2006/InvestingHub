@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investing Hub</title>
+
+  <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.1.1/css/bootstrap.min.css" >
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <link rel="stylesheet" href="./assets/css/Mongodb.css">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+          <img src="./assets/images/logo-light.png" alt="Devblog's logo" width="60" height="80" class="logo-light">
+          <img src="./assets/images/logo-dark.png" alt="Devblog's logo" width="60" height="80" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="learning page.html" class="nav-link">Learning Page</a>
+            </li>
+
+            <li>
+              <a href="readingsnews.html" class="nav-link">Reading New Page</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <p class="h3 nav-title">Topics</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Database</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Accessibility</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Web Performance</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+     <body  >
+      <div class="blog-page main">
+        <div class="container-fluid">
+            <div class="row align-items-start">
+                <div class="col-lg-8 m-15px-tb">
+                    <article class="article">
+                        <div class="article-img">
+                            <img src="./assets/images/blog-8.png" alt="Building microservices with Dropwizard, MongoDB & Docker" class="blog-banner-img">
+                        </div>
+                        <div class="article-title">
+                            <h6><a href="#">Learning</a></h6>
+                            <h2>The Business Cycle: Phases and Factors Influencing Economic Growth</h2>
+                            <div class="media">
+                                <div class="avatar">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <label>Vivaan Rajesh</label>
+                                    <span>Feb 26 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <p>The business cycle refers to the fluctuations in economic activity that occur over time. It is characterized by alternating periods of economic expansion and contraction. In this article, we will explore the different phases of the business cycle and the factors that influence economic growth.</p>
+                            <h3>Phases of the Business Cycle</h3>
+                            <p>The business cycle consists of four distinct phases:</p>
+                            <ol>
+                                <li><strong>Expansion:</strong> During this phase, economic activity is increasing, and indicators such as GDP, employment, and consumer spending are on the rise. Businesses expand their operations, and there is optimism in the economy.</li>
+                                <li><strong>Peak:</strong> The peak represents the highest point of economic activity in the cycle. Output and employment levels are at their maximum, and inflationary pressures may start to build. Business and consumer confidence are usually high during this phase.</li>
+                                <li><strong>Contraction:</strong> Also known as a recession, the contraction phase is characterized by a decline in economic activity. GDP, employment, and consumer spending decrease, leading to a slowdown in business operations. Unemployment rates rise, and consumer confidence declines.</li>
+                                <li><strong>Trough:</strong> The trough marks the lowest point of the business cycle. Economic activity has reached its minimum, and indicators are at their lowest levels. However, the trough also signifies the beginning of the next expansion phase.</li>
+                            </ol>
+                            <h3>Factors Influencing Economic Growth</h3>
+                            <p>Several factors influence economic growth and contribute to the fluctuations in the business cycle:</p>
+                            <ul>
+                                <li><strong>Monetary Policy:</strong> Central banks use monetary policy tools, such as interest rates and money supply adjustments, to influence borrowing costs, control inflation, and stimulate or restrain economic growth.</li>
+                                <li><strong>Fiscal Policy:</strong> Governments utilize fiscal policy measures, such as taxation, public spending, and budget deficits or surpluses, to influence aggregate demand and stabilize the economy.</li>
+                                <li><strong>Business Investment:</strong> Private sector investments in machinery, infrastructure, and technology drive economic growth by increasing productivity, creating jobs, and fostering innovation.</li>
+                                <li><strong>Consumer Spending:</strong> Household consumption plays a crucial role in economic growth. High consumer confidence, income levels, and access to credit contribute to increased spending, driving demand for goods and services.</li>
+                                <li><strong>Global Economic Conditions:</strong> International factors, such as trade policies, exchange rates, and global economic trends, can impact a country's economic growth by affecting exports, imports, and foreign investment.</li>
+                                <li><strong>Technological Advancements:</strong> Innovations and advancements in technology can spur economic growth by improving productivity, creating new industries, and driving efficiency gains.</li>
+                            </ul>
+                            <h3>Impacts on Businesses and Individuals</h3>
+                            <p>The business cycle has significant implications for businesses and individuals:</p>
+                            <ul>
+                                <li><strong>Business Planning:</strong> Understanding the business cycle helps companies plan for expansionary or contractionary periods, adjust production levels, manage inventory, and make strategic decisions.</li>
+                                <li><strong>Employment:</strong> Changes in the business cycle affect employment levels. During expansions, businesses may increase hiring, while contractions can lead to layoffs and higher unemployment rates.</li>
+                                <li><strong>Investment and Lending:</strong> Economic conditions influence investment decisions and access to credit. During expansions, businesses and individuals may have easier access to capital, while contractions can result in tighter credit conditions.</li>
+                                <li><strong>Consumer Behavior:</strong> Consumer confidence and spending patterns are influenced by the business cycle. During expansions, consumers may be more willing to spend, while contractions can lead to cautious spending and increased savings.</li>
+                            </ul>
+                            <h3>Conclusion</h3>
+                            <p>The business cycle is a natural occurrence in the economy, characterized by alternating periods of expansion and contraction. Understanding the different phases of the business cycle and the factors that influence economic growth is crucial for businesses, policymakers, and individuals. By monitoring economic indicators and adjusting strategies accordingly, stakeholders can navigate the business cycle and adapt to changing economic conditions.</p>
+                        </div>
+                        <div class="nav tag-cloud">
+                          <a href="#">Learning</a>
+                          <a href="#">News</a>
+                          <a href="#">Investing</a>
+                          <a href="#">Stocks</a>
+                          <a href="#">Real Estate</a>
+                          <a href="#">Cryptocurrency</a>
+                          <a href="#">Policies</a>
+                        </div>
+                    </article>
+                        <div class="contact-form article-comment">
+                            <h4>Leave a Reply</h4>
+                            <form id="contact-form" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="Name" id="name" placeholder="Name *" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="Email" id="email" placeholder="Email *" class="form-control" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" id="message" placeholder="Your message *" rows="4" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="send">
+                                            <button class="px-btn theme"><span>Submit</span> <i class="arrow"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 m-15px-tb blog-aside">
+                        <!-- Author -->
+                        <div class="widget widget-author">
+                            <div class="widget-title">
+                                <h3>Author</h3>
+                            </div>
+                            <div class="widget-body">
+                                <div class="media align-items-center">
+                                    <div class="avatar">
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" title="" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>Hello, I'm<br> Vivaan Rajesh</h6>
+                                    </div>
+                                </div>
+                                <p>I'm a high school student interested in finance and computer science. I founded Investing Hub becuase I believe that
+                                  everyone should have access to financial education. I hope you enjoy the content on this website!
+                                </p>                            </div>
+                        </div>
+                        <!-- End Author -->
+                        <!-- Trending Post -->
+                        <div class="widget widget-post">
+                            <div class="widget-title">
+                                <h3>Trending Now</h3>
+                            </div>
+                            <div class="widget-body">
+    
+                            </div>
+                        </div>
+                        <!-- End Trending Post -->
+                        <!-- Latest Post -->
+                        <div class="widget widget-latest-post">
+                            <div class="widget-title">
+                                <h3>Latest Post</h3>
+                            </div>
+                            <div class="widget-body">
+                                <div class="latest-post-aside media">
+                                    <div class="lpa-left media-body">
+                                        <div class="lpa-title">
+                                            <h5><a href="#">Understanding Supply and Demand: Key Concepts in Economics</a></h5>
+                                        </div>
+                                        <div class="lpa-meta">
+                                            <a class="name" href="#">
+                                                Vivaan Rajesh
+                                            </a>
+                                            <a class="date" href="#">
+                                                26 FEB 2023
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="lpa-right">
+                                        <a href="#">
+                                            <img src="https://www.bootdey.com/image/400x200/FFB6C1/000000" title="" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="latest-post-aside media">
+                                    <div class="lpa-left media-body">
+                                        <div class="lpa-title">
+                                            <h5><a href="#">The Impact of Globalization on the Economy: Pros and Cons</a></h5>
+                                        </div>
+                                        <div class="lpa-meta">
+                                            <a class="name" href="#">
+                                                Vivaan Rajesh
+                                            </a>
+                                            <a class="date" href="#">
+                                                26 FEB 2023
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="lpa-right">
+                                        <a href="#">
+                                            <img src="https://www.bootdey.com/image/400x200/FFB6C1/000000" title="" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="latest-post-aside media">
+                                    <div class="lpa-left media-body">
+                                        <div class="lpa-title">
+                                            <h5><a href="#">Money and Banking: How Financial Institutions Shape the Economy
+</a></h5>
+                                        </div>
+                                        <div class="lpa-meta">
+                                            <a class="name" href="#">
+                                                Vivaan Rajesh
+                                            </a>
+                                            <a class="date" href="#">
+                                                26 FEB 2023
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="lpa-right">
+                                        <a href="#">
+                                            <img src="https://www.bootdey.com/image/400x200/FFB6C1/000000" title="" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Latest Post -->
+                        <!-- widget Tags -->
+                        <div class="widget widget-tags">
+                            <div class="widget-title">
+                                <h3>Latest Tags</h3>
+                            </div>
+                            <div class="widget-body">
+                                <div class="nav tag-cloud">
+                                  <a href="#">Learning</a>
+                                  <a href="#">News</a>
+                                  <a href="#">Investing</a>
+                                  <a href="#">Stocks</a>
+                                  <a href="#">Real Estate</a>
+                                  <a href="#">Cryptocurrency</a>
+                                  <a href="#">Policies</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End widget Tags -->
+                    </div>
+                </div>
+            </div>
+        </div>
+     </body>
+
+
+<body >
+    
+  
+</body>
+
+
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container ">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="./assets/images/logo-light.png" alt="DevBlog's Logo" width="70" height="70" class="logo-light">
+          <img src="./assets/images/logo-dark.png" alt="DevBlog's Logo" width="70" height="70" class="logo-dark">
+        </a>
+
+        <p class="footer-text">
+          Learn about Web accessibility, Web performance, and Database management.
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Advertise with us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper ">
+
+        <p class="footer-title">Legal Stuff</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Notice</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Cookie Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms Of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2022 <a href="#"> Investing Hub</a>
+    </p>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.min.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

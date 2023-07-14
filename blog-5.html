@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investing Hub</title>
+
+  <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.1.1/css/bootstrap.min.css" >
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <link rel="stylesheet" href="./assets/css/Mongodb.css">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+          <img src="./assets/images/logo-light.png" alt="Devblog's logo" width="60" height="80" class="logo-light">
+          <img src="./assets/images/logo-dark.png" alt="Devblog's logo" width="60" height="80" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="learning page.html" class="nav-link">Learning Page</a>
+            </li>
+
+            <li>
+              <a href="readingsnews.html" class="nav-link">Reading New Page</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <p class="h3 nav-title">Topics</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Database</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Accessibility</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Web Performance</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+     <body  >
+      <div class="blog-page main">
+        <div class="container-fluid">
+            <div class="row align-items-start">
+                <div class="col-lg-8 m-15px-tb">
+                    <article class="article">
+                        <div class="article-img">
+                            <img src="./assets/images/blog-5.jpg" alt="Building microservices with Dropwizard, MongoDB & Docker" class="blog-banner-img">
+                        </div>
+                        <div class="article-title">
+                            <h6><a href="#">Learning</a></h6>
+                            <h2>Macroeconomics vs. Microeconomics: Understanding the Difference</h2>
+                            <div class="media">
+                                <div class="avatar">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <label> Vivaan Rajesh</label>
+                                    <span>Feb 26 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <p>Economics is a vast field that can be divided into two main branches: macroeconomics and microeconomics. While both branches study economic activities, they focus on different levels of analysis. In this article, we will explore the difference between macroeconomics and microeconomics.</p>
+                            <h3>Macroeconomics</h3>
+                            <p>Macroeconomics examines the economy as a whole and analyzes aggregate economic indicators and phenomena. Key concepts and topics in macroeconomics include:</p>
+                            <ul>
+                                <li><strong>Aggregate Demand and Supply:</strong> Macroeconomists study the overall demand for goods and services in an economy and the total supply of goods and services.</li>
+                                <li><strong>National Income and Output:</strong> Macroeconomics analyzes the total income generated in an economy and measures of economic output, such as Gross Domestic Product (GDP).</li>
+                                <li><strong>Unemployment and Inflation:</strong> Macroeconomists investigate factors influencing unemployment rates and inflation levels in the economy.</li>
+                                <li><strong>Monetary and Fiscal Policies:</strong> Macroeconomics examines the role of central banks and governments in influencing the economy through monetary policies (e.g., interest rates) and fiscal policies (e.g., taxation and government spending).</li>
+                                <li><strong>Economic Growth and Business Cycles:</strong> Macroeconomics studies long-term economic growth patterns and short-term fluctuations in economic activity known as business cycles.</li>
+                            </ul>
+                            <h3>Microeconomics</h3>
+                            <p>Microeconomics focuses on individual economic units, such as households, firms, and industries. It analyzes the choices made by these units and the interactions between them. Key concepts and topics in microeconomics include:</p>
+                            <ul>
+                                <li><strong>Supply and Demand:</strong> Microeconomics explores how the interaction of supply and demand determines prices and quantities in specific markets.</li>
+                                <li><strong>Consumer Behavior:</strong> Microeconomists study how consumers make choices and allocate their income among different goods and services.</li>
+                                <li><strong>Production and Costs:</strong> Microeconomics analyzes how firms produce goods and services, the factors of production they use, and the costs associated with production.</li>
+                                <li><strong>Market Structures:</strong> Microeconomics examines different market structures, such as perfect competition, monopoly, oligopoly, and monopolistic competition.</li>
+                                <li><strong>Resource Allocation:</strong> Microeconomics investigates how resources are allocated among different uses and the efficiency of resource allocation.</li>
+                            </ul>
+                            <h3>Key Differences</h3>
+                            <p>The main differences between macroeconomics and microeconomics can be summarized as follows:</p>
+                            <table>
+                                <tr>
+                                    <th>Aspect</th>
+                                    <th>Macroeconomics</th>
+                                    <th>Microeconomics</th>
+                                </tr>
+                                <tr>
+                                    <td>Focus</td>
+                                    <td>Economy as a whole</td>
+                                    <td>Individual economic units</td>
+                                </tr>
+                                <tr>
+                                    <td>Aggregation</td>
+                                    <td>Aggregate economic variables</td>
+                                    <td>Specific economic variables</td>
+                                </tr>
+                                <tr>
+                                    <td>Analysis</td>
+                                    <td>Examines overall economic trends and policies</td>
+                                    <td>Analyzes individual choices and market interactions</td>
+                                </tr>
+                            </table>
+                            <h3>Conclusion</h3>
+                            <p>Macroeconomics and microeconomics are two essential branches of economics that provide different perspectives on economic behavior and phenomena. Macroeconomics focuses on the overall performance and policies of the economy, while microeconomics examines individual economic units and market interactions. By understanding the distinctions between macroeconomics and microeconomics, we gain valuable insights into the complex workings of the economy at different levels of analysis.</p>
+                        </div>
+                        <div class="nav tag-cloud">
+                          <a href="#">Stocks</a>
+                          <a href="#">Investing</a>
+                          <a href="#">Policies</a>
+                          <a href="#">Learning</a>
+                        </div>
+                    </article>
+                        <div class="contact-form article-comment">
+                            <h4>Leave a Reply</h4>
+                            <form id="contact-form" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="Name" id="name" placeholder="Name *" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="Email" id="email" placeholder="Email *" class="form-control" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" id="message" placeholder="Your message *" rows="4" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="send">
+                                            <button class="px-btn theme"><span>Submit</span> <i class="arrow"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 m-15px-tb blog-aside">
+                        <!-- Author -->
+                        <div class="widget widget-author">
+                            <div class="widget-title">
+                                <h3>Author</h3>
+                            </div>
+                            <div class="widget-body">
+                                <div class="media align-items-center">
+                                    <div class="avatar">
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" title="" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>Hello, I'm<br> Vivaan Rajesh</h6>
+                                    </div>
+                                </div>
+                                <p>I'm a high school student interested in finance and computer science. I founded Investing Hub becuase I believe that
+                                  everyone should have access to financial education. I hope you enjoy the content on this website!
+                                </p>                            </div>
+                        </div>
+                        <!-- End Author -->
+                        <!-- Trending Post -->
+                        <div class="widget widget-post">
+                            <div class="widget-title">
+                                <h3>Trending Now</h3>
+                            </div>
+                            <div class="widget-body">
+    
+                            </div>
+                        </div>
+                        <!-- End Trending Post -->
+                        <!-- Latest Post -->
+                        <div class="widget widget-latest-post">
+                            <div class="widget-title">
+                                <h3>Latest Post</h3>
+                            </div>
+                            <div class="widget-body">
+                                <div class="latest-post-aside media">
+                                    <div class="lpa-left media-body">
+                                        <div class="lpa-title">
+                                            <h5><a href="#">Introduction to Economics: A Beginner's Guide</a></h5>
+                                        </div>
+                                        <div class="lpa-meta">
+                                            <a class="name" href="#">
+                                                Vivaan Rajesh
+                                            </a>
+                                            <a class="date" href="#">
+                                                26 FEB 2023
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="lpa-right">
+                                        <a href="#">
+                                            <img src="https://www.bootdey.com/image/400x200/FFB6C1/000000" title="" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="latest-post-aside media">
+                                    <div class="lpa-left media-body">
+                                        <div class="lpa-title">
+                                            <h5><a href="#">Understanding Supply and Demand: Key Concepts in Economics</a></h5>
+                                        </div>
+                                        <div class="lpa-meta">
+                                            <a class="name" href="#">
+                                                Vivaan Rajesh
+                                            </a>
+                                            <a class="date" href="#">
+                                                26 FEB 2023
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="lpa-right">
+                                        <a href="#">
+                                            <img src="https://www.bootdey.com/image/400x200/FFB6C1/000000" title="" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="latest-post-aside media">
+                                    <div class="lpa-left media-body">
+                                        <div class="lpa-title">
+                                            <h5><a href="#">Exploring Different Economic Systems: Capitalism, Socialism, and More</a></h5>
+                                        </div>
+                                        <div class="lpa-meta">
+                                            <a class="name" href="#">
+                                                Vivaan Rajesh
+                                            </a>
+                                            <a class="date" href="#">
+                                                26 FEB 2023
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="lpa-right">
+                                        <a href="#">
+                                            <img src="https://www.bootdey.com/image/400x200/FFB6C1/000000" title="" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Latest Post -->
+                        <!-- widget Tags -->
+                        <div class="widget widget-tags">
+                            <div class="widget-title">
+                                <h3>Latest Tags</h3>
+                            </div>
+                            <div class="widget-body">
+                                <div class="nav tag-cloud">
+                                  <a href="#">Learning</a>
+                                  <a href="#">News</a>
+                                  <a href="#">Investing</a>
+                                  <a href="#">Stocks</a>
+                                  <a href="#">Real Estate</a>
+                                  <a href="#">Cryptocurrency</a>
+                                  <a href="#">Policies</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End widget Tags -->
+                    </div>
+                </div>
+            </div>
+        </div>
+     </body>
+
+
+<body >
+    
+  
+</body>
+
+
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container ">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="./assets/images/logo-light.png" alt="DevBlog's Logo" width="70" height="70" class="logo-light">
+          <img src="./assets/images/logo-dark.png" alt="DevBlog's Logo" width="70" height="70" class="logo-dark">
+        </a>
+
+        <p class="footer-text">
+          Learn about Web accessibility, Web performance, and Database management.
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Advertise with us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper ">
+
+        <p class="footer-title">Legal Stuff</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Notice</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Cookie Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms Of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2022 <a href="#">Investing Hub</a>
+    </p>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.min.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
