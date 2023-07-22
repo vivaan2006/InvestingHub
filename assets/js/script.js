@@ -1,57 +1,59 @@
 'use strict';
 
-// navbar variables
+// Navbar variables
 const nav = document.querySelector('.mobile-nav');
 const navMenuBtn = document.querySelector('.nav-menu-btn');
 const navCloseBtn = document.querySelector('.nav-close-btn');
 
+// Navbar animation variables
+const navExpandDuration = 400; // Duration for the navbar expand animation
+const navCollapseDuration = 300; // Duration for the navbar collapse animation
 
-// navToggle function
-const navToggleFunc = function () { nav.classList.toggle('active'); }
+// NavToggle function
+const navToggleFunc = () => {
+  if (nav.classList.contains('active')) {
+    nav.style.transitionDuration = `${navCollapseDuration}ms`;
+  } else {
+    nav.style.transitionDuration = `${navExpandDuration}ms`;
+  }
+  nav.classList.toggle('active');
+};
 
 navMenuBtn.addEventListener('click', navToggleFunc);
 navCloseBtn.addEventListener('click', navToggleFunc);
 
+// Theme toggle variables
+const themeBtns = document.querySelectorAll('.theme-btn');
+const transitionDuration = 200; // Duration for the theme transition
 
-
-// theme toggle variables
-const themeBtn = document.querySelectorAll('.theme-btn');
-
-// themeBtnClick function
-function themeBtnClick(){
-  
+// ThemeBtnClick function
+function themeBtnClick() {
   document.body.classList.toggle('light-theme');
   document.body.classList.toggle('dark-theme');
-  
 
-  for (let i = 0; i < themeBtn.length; i++) {
-
-    // When the `theme-btn` is clicked,
-    // it toggles classes between `light` & `dark` for all `theme-btn`.
-    themeBtn[i].classList.toggle('light');
-    themeBtn[i].classList.toggle('dark');
-
+  for (const btn of themeBtns) {
+    // Add smooth transition for theme toggle
+    btn.style.transitionDuration = `${transitionDuration}ms`;
+    btn.classList.toggle('light');
+    btn.classList.toggle('dark');
   }
 }
-// localstorage check
-if (localStorage.getItem("theme") === "dark") {
+
+// LocalStorage check
+if (localStorage.getItem('theme') === 'dark') {
   themeBtnClick();
 }
 
-
-// themeBtnClick listener
-for (let i = 0; i < themeBtn.length; i++) {
-
-  themeBtn[i].addEventListener('click', function () {
-
-    // toggle `light-theme` & `dark-theme` class from `body`
-    // when clicked `theme-btn`
-  if (document.body.classList.contains('light-theme')) {
-    localStorage.setItem("theme","dark");
-  }else{
-    localStorage.setItem("theme","light");
-  }
+// ThemeBtnClick listener
+for (const btn of themeBtns) {
+  btn.addEventListener('click', () => {
+    // Toggle `light-theme` & `dark-theme` class from `body`
+    // when clicked `theme-btn`.
+    if (document.body.classList.contains('light-theme')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
     themeBtnClick();
-  })
-
+  });
 }
