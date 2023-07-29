@@ -1,25 +1,4 @@
-/*-----------------------------------*\ 
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 @codewithsadee 
- */
-
-
-
-
-
-/*-----------------------------------*\ 
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 .light-theme {
-
-  /**
-   * light theme colors 
-   */
-
   --background-primary: hsl(0, 0%, 100%);
   --background-secondary: hsl(0, 0%, 97%);
 
@@ -31,15 +10,9 @@
   --foreground-tertiary: hsl(214, 20%, 69%);
 
   --accent: hsl(229, 76%, 66%);
-
 }
 
 .dark-theme {
-
-  /**
-   * dark theme colors 
-   */
-
   --background-primary: hsl(218, 23%, 23%);
   --background-secondary: hsl(220, 26%, 14%);
 
@@ -55,16 +28,7 @@
 }
 
 :root {
-
-  /**
-   * color
-   */
-
   --white: hsl(0, 0%, 100%);
-
-  /**
-   * typography 
-   */
 
   --fs-base: 0.85rem;
   --fs-1: 1.875rem;
@@ -72,23 +36,9 @@
   --fs-3: 1.25rem;
   --fs-4: 0.875rem;
   --fs-5: 0.75rem;
-
-  /**
-   * spacing 
-   */
-
   --py: 5rem;
 
 }
-
-
-
-
-
-/*-----------------------------------*\ 
-  #RESET
-\*-----------------------------------*/
-
 *, *::before, *::after {
   margin:  0;
   padding: 0;
@@ -112,17 +62,11 @@ button {
 
 html {
   font-family: "Inter", sans-serif;
-  font-size: var(--fs-base); /* base font-size (0.85rem = 13.6px) */
+  font-size: var(--fs-base);
   line-height: 1.8;
 }
 
 :focus { outline-offset: 4px; }
-
-
-/**
- * scrollbar style
- */
-
 ::-webkit-scrollbar { width: 16px; }
 
 
@@ -139,14 +83,6 @@ html {
 .light-theme::-webkit-scrollbar-track { background: hsl(0, 0%, 90%); }
 
 .dark-theme::-webkit-scrollbar-track { background: hsl(219, 27%, 20%); }
-
-
-
-
-
-/*-----------------------------------*\ 
-  #BASE STYLE
-\*-----------------------------------*/
 
 .h1,
 .h2,
@@ -180,14 +116,6 @@ html {
 
 .text-tiny { font-size: var(--fs-5); }
 
-
-
-
-
-/*-----------------------------------*\ 
-  #REUSED STYLE
-\*-----------------------------------*/
-
 .container {
   margin-inline: auto;
   margin: auto; /* fallback for margin-inline */
@@ -219,14 +147,6 @@ html {
 
 .btn-secondary:hover { border-color: var(--accent); }
 
-
-
-
-
-/*-----------------------------------*\ 
-  #Extra style for dark theme
-\*-----------------------------------*/
-
 .dark-theme .btn-primary:hover { color: var(--background-primary); }
 
 .dark-theme .blog-topic {
@@ -242,13 +162,6 @@ html {
 .dark-theme .load-more:hover { color: var(--white); }
 
 .dark-theme .aside .h2 { color: var(--foreground-primary); }
-
-
-
-
-/*-----------------------------------*\ 
-  #HEADER
-\*-----------------------------------*/
 
 header { background: var(--background-primary); }
 
@@ -341,14 +254,6 @@ header .btn-group {
 
 .mobile-nav .nav-link:hover { color: var(--accent); }
 
-
-
-
-
-/*-----------------------------------*\ 
-  #HERO SECTION
-\*-----------------------------------*/
-
 .hero {
   background: var(--background-primary);
   padding-top:    2rem;
@@ -380,14 +285,6 @@ header .btn-group {
 }
 
 .hero .right { display: none; }
-
-
-
-
-
-/*-----------------------------------*\ 
-  #BLOG SECTION
-\*-----------------------------------*/
 
 .main {
   background: var(--background-secondary);
@@ -469,7 +366,7 @@ header .btn-group {
 .blog .separator {
   background: var(--foreground-tertiary);
   margin-inline: 3px;
-  margin: 0 3px; /* fallback for margin-inline */
+  margin: 0 3px;
   width:  3px;
   height: 3px;
   border-radius: 3px;
@@ -479,32 +376,14 @@ header .btn-group {
 
 .load-more {
   margin-inline: auto;
-  margin: auto; /* fallback for margin-inline */
+  margin: auto; 
   background: var(--foreground-secondary);
   color: var(--background-secondary);
   padding: 0.6875rem 1.1875rem;
 }
 
 .load-more:hover { background: var(--accent); }
-
-
-
-
-
-/*-----------------------------------*\ 
-  #ASIDE
-\*-----------------------------------*/
-
 .aside { display: none; }
-
-
-
-
-
-/*-----------------------------------*\ 
-  #FOOTER
-\*-----------------------------------*/
-
 footer { background: var(--background-primary); }
 
 footer .container {
@@ -522,7 +401,7 @@ footer .wrapper { text-align: center; }
   color: var(--foreground-secondary);
   max-width: 300px;
   margin-inline: auto;
-  margin: auto; /* fallback for margin-inline */
+  margin: auto; 
 }
 
 .footer-title {
@@ -551,35 +430,11 @@ footer .wrapper { text-align: center; }
 
 .copyright a:hover { text-decoration: underline; }
 
-
-
-
-
-/*-----------------------------------*\ 
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 550px screen
- */
-
 @media (min-width: 550px) {
 
   :root {
-
-    /**
-     * typography 
-     */
-
     --fs-base: 0.90rem;
-
   }
-
-
-  /**
-   * BLOG 
-   */
-
   .blog-card {
     display: grid;
     grid-template-columns: 3fr 4fr;
@@ -600,47 +455,14 @@ footer .wrapper { text-align: center; }
 
 }
 
-
-
-
-
-/**
- * responsive for larger than 650px screen
- */
-
 @media (min-width: 650px) {
 
   :root {
-
-    /**
-     * typography 
-     */
-
     --fs-1: 2.25rem;
 
   }
-
-
-
-  /**
-   * REUSED STYLE 
-   */
-
   .container { padding: 0 30px; }
-
-
-
-  /**
-   * HEADER 
-   */
-
   .navbar { padding: 30px 0; }
-
-
-
-  /**
-   * BLOG 
-   */
 
   .blog .h2 {
     position: relative;
@@ -696,12 +518,6 @@ footer .wrapper { text-align: center; }
     gap: 0;
   }
 
-
-
-  /**
-   * FOOTER 
-   */
-
   footer .container {
     padding: var(--py) 30px;
     grid-template-columns: 2fr 1fr 1fr;
@@ -713,58 +529,21 @@ footer .wrapper { text-align: center; }
 
 }
 
-
-
-
-
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
-
-  /**
-   * REUSED STYLE 
-   */
 
   .container { max-width: 800px; }
 
 }
 
-
-
-
-
-/**
- * responsive for larger than 1024px screen
- */
-
 @media (min-width: 1024px) {
 
   :root {
-
-    /**
-     * typography 
-     */
-
     --fs-base: 1rem;
     --fs-1: 3rem;
 
   }
 
-
-
-  /**
-   * REUSED STYLE 
-   */
-
   .container { max-width: 1150px; }
-
-
-
-  /**
-   * HEADER 
-   */
 
   header .btn-group { display: none; }
 
@@ -822,12 +601,6 @@ footer .wrapper { text-align: center; }
   }
 
   .theme-btn-desktop.dark::before { left: calc(100% - 24px); }
-
-
-
-  /**
-   * HERO 
-   */
 
   .hero { text-align: left; }
 
@@ -896,23 +669,11 @@ footer .wrapper { text-align: center; }
     z-index: 2;
   }
 
-
-
-  /**
-   * MAIN 
-   */
-
   .main .container {
     display: grid;
     grid-template-columns: 5fr 2fr;
     gap: 60px;
   }
-
-
-
-  /**
-   * ASIDE 
-   */
 
   .aside {
     display: block;
@@ -1059,15 +820,8 @@ footer .wrapper { text-align: center; }
 
   .newsletter .btn-primary {
     margin-inline: auto;
-    margin: auto; /* fallback for margin-inline */
+    margin: auto; 
   }
-
-
-
-  /**
-   * FOOTER 
-   */
-
   .footer-title { font-size: 1.125rem; }
 
   .footer-link { margin-bottom: 0.3rem; }
